@@ -1483,7 +1483,7 @@ median.seq.depth.3 <- median(sample_sums(ps.clean.3))
 ### Rarefying with median sequencing depth causes loss in samples as well as ASVs after random sampling
 ### Therefore, rarefy with minimum sequencing depth
 
-rarefied.min.3 <- rarefy_even_depth(new.ps.clean.3,rngseed=123,sample.size=min(sample_sums(ps.clean.3)), replace=F)
+rarefied.min.3 <- rarefy_even_depth(new.ps.clean.3,rngseed=123,sample.size=min(sample_sums(new.ps.clean.3)), replace=F)
 
 rarefied.min.3
 
